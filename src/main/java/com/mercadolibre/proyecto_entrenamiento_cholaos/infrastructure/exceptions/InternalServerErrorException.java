@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.exceptions;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.exceptions;
 
 import org.springframework.http.HttpStatus;
 

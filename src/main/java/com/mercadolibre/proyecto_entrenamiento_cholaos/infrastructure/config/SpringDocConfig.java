@@ -1,7 +1,7 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.config;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.config;
 
-import static com.mercadolibre.proyecto_entrenamiento_cholaos.util.ScopeUtils.getScopeValue;
-import static com.mercadolibre.proyecto_entrenamiento_cholaos.util.ScopeUtils.isLocalScope;
+import static com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.util.ScopeUtils.getScopeValue;
+import static com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.util.ScopeUtils.isLocalScope;
 import static java.lang.String.format;
 
 import com.fasterxml.jackson.databind.ObjectMapper;

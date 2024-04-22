@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.config;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.config;
 
 import com.mercadolibre.threading.executor.MeliExecutors;
 import java.util.concurrent.ExecutorService;

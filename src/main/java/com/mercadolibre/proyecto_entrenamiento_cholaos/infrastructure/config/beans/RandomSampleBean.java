@@ -1,6 +1,6 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.beans;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.config.beans;
 
-import com.mercadolibre.proyecto_entrenamiento_cholaos.dtos.SampleDTO;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.application.dtos.SampleDTO;
 import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.stereotype.Component;
 

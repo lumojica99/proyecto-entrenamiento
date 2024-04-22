@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.util;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.util;
 
 import org.apache.commons.lang3.StringUtils;
 

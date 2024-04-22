@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.config;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.config;
 
 import com.mercadolibre.routing.RoutingFilter;
 import java.util.Locale;

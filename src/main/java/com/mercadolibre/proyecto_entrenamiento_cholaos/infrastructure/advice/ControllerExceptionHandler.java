@@ -1,7 +1,7 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.config;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.advice;
 
-import com.mercadolibre.proyecto_entrenamiento_cholaos.exceptions.ApiError;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.exceptions.ApiException;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.exceptions.ApiError;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.exceptions.ApiException;
 import com.newrelic.api.agent.NewRelic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

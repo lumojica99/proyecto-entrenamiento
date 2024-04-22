@@ -3,9 +3,9 @@ package com.mercadolibre.proyecto_entrenamiento_cholaos.integration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.doThrow;
 
-import com.mercadolibre.proyecto_entrenamiento_cholaos.controller.PingController;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.exceptions.ApiError;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.exceptions.ApiException;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.input.rest.PingController;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.exceptions.ApiError;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.exceptions.ApiException;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.http.HttpMethod;

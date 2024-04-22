@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.dtos;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.application.dtos;
 
 import java.io.Serializable;
 

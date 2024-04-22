@@ -1,6 +1,6 @@
 package com.mercadolibre.proyecto_entrenamiento_cholaos.unit;
 
-import com.mercadolibre.proyecto_entrenamiento_cholaos.util.ScopeUtils;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.util.ScopeUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

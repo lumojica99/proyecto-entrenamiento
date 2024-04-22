@@ -1,6 +1,6 @@
 package com.mercadolibre.proyecto_entrenamiento_cholaos;
 
-import com.mercadolibre.proyecto_entrenamiento_cholaos.util.ScopeUtils;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.util.ScopeUtils;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 

@@ -1,4 +1,4 @@
-package com.mercadolibre.proyecto_entrenamiento_cholaos.controller;
+package com.mercadolibre.proyecto_entrenamiento_cholaos.infrastructure.input.rest;
 
 import com.newrelic.api.agent.NewRelic;
 import org.springframework.web.bind.annotation.GetMapping;
