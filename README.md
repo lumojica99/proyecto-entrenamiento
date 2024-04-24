@@ -1,8 +1,8 @@
 # proyecto-entrenamiento-cholaos
 
-# Spring Boot App model for Java 17
+# Spring Boot App model for Java 21
 
-We provide a basic model for JDK 17 / Spring based web applications.
+We provide a basic model for JDK 21 / Spring based web applications.
 
 Please address any questions and comments to [Fury Issue Tracker](https://github.com/mercadolibre/fury/issues).
 
@@ -69,14 +69,14 @@ To simplify the management and maintainability of your API specs, we present [Fu
 
 ```
 # Dockerfile
-FROM hub.furycloud.io/mercadolibre/java:17-mini
+FROM hub.furycloud.io/mercadolibre/java:21-mini
 ```
 
 You can find all available tags for your `Dockerfile` [here](https://github.com/mercadolibre/fury_java-mini#supported-tags)
 
 ```
 # Dockerfile.runtime
-FROM hub.furycloud.io/mercadolibre/java:17-runtime-mini
+FROM hub.furycloud.io/mercadolibre/java:21-runtime-mini
 ```
 
 You can find all available tags for your `Dockerfile.runtime` [here](https://github.com/mercadolibre/fury_java-mini-runtime#supported-tags)

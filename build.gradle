@@ -1,0 +1,76 @@
+plugins {
+  id 'org.springframework.boot' version '3.2.3'
+  id 'io.spring.dependency-management' version '1.1.0'
+  id 'java'
+  id 'jacoco'
+}
+
+group = 'com.mercadolibre'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 21
+targetCompatibility = 21
+
+repositories {
+  maven { url "https://maven.artifacts.furycloud.io/repository/all" }
+}
+
+bootJar {
+  archiveFileName = 'application.jar'
+}
+
+dependencies {
+  // Internal application dependencies
+  implementation platform('com.mercadolibre.library:java-melitk-bom:2.0.1')
+  implementation('com.mercadolibre.metrics:metrics-core')
+  implementation('com.mercadolibre.metrics:datadog-metric-wrapper')
+  implementation('com.mercadolibre.restclient:meli-restclient-default')
+  implementation('com.mercadolibre:threading')
+  implementation('com.mercadolibre.json_jackson:json-jackson')
+  implementation('com.mercadolibre:kvsclient')
+
+  // External application dependencies
+  implementation ('org.springframework.boot:spring-boot-starter-webflux')
+  implementation group: 'io.projectreactor.netty', name: 'reactor-netty-http', version: '1.1.14'
+  implementation('com.newrelic.agent.java:newrelic-api:8.7.0')
+  implementation group: 'io.netty', name: 'netty-codec-http2', version: '4.1.104.Final'
+
+  //Lombok
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+
+  annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+  // Test dependencies for all projects
+  testImplementation('org.springframework.boot:spring-boot-starter-test')
+  testImplementation 'io.projectreactor:reactor-test'
+  testImplementation('uk.org.webcompere:system-stubs-jupiter:2.0.1')
+  testImplementation('com.mercadolibre.restclient:restclient-core')
+}
+
+test {
+  useJUnitPlatform()
+
+  // Always run tests, even when nothing changed.
+  dependsOn 'cleanTest'
+
+  // Show test results.
+  testLogging {
+    events "passed", "skipped", "failed"
+    showExceptions true
+    exceptionFormat "full"
+    showCauses true
+    showStackTraces true
+  }
+}
+
+jacoco {
+  toolVersion = "0.8.8"
+}
+
+jacocoTestReport {
+  reports {
+    xml.required = true
+    html.required = false
+  }
+}

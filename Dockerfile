@@ -1,3 +1,3 @@
-FROM hub.furycloud.io/mercadolibre/distroless-java-dev:17-mini
+FROM hub.furycloud.io/mercadolibre/distroless-java-dev:21-mini
 
 ENV SCOPE="test"
