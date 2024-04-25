@@ -26,6 +26,6 @@ public class ItemServiceImplTest {
         Field field = ItemServiceImpl.class.getDeclaredField("iitemServicePort");
         field.setAccessible(true);
         IItemServicePort injectedPort = (IItemServicePort) field.get(itemService);
-        assertSame(itemServicePort, injectedPort, "El puerto del servicio del servicio debe ser el mismo que el mock");
+        assertSame(itemServicePort, injectedPort, "El puerto del servicio del servicio debe ser el mismo que el mock.");
     }
     }
