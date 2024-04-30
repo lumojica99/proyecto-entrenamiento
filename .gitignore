@@ -6,3 +6,27 @@ target/
 .settings
 .classpath
 .project
+build/
+out/
+*gradle
+
+# Archivos y directorios generados por la ejecución de pruebas
+*.log
+test-output/
+
+# Archivos y directorios generados por la documentación
+javadoc/
+
+# Archivos y directorios generados por la empaquetación
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.rar
+
+# Archivos y directorios generados por la seguridad
+*.jks
+*.keystore
+
+
