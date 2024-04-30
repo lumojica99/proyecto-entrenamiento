@@ -2,10 +2,7 @@ package com.mercadolibre.proyecto_entrenamiento_cholaos.unit;
 
 import com.mercadolibre.proyecto_entrenamiento_cholaos.application.exceptions.ItemServiceException;
 import com.mercadolibre.proyecto_entrenamiento_cholaos.application.exceptions.UserServiceException;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.GenericException;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.ItemNotFoundException;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.ItemStatusException;
-import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.UserStatusException;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
@@ -28,6 +25,15 @@ public class ExceptionsTest {
     public void testItemNotFoundException() {
         String expectedMessage = "Item no encontrado";
         ItemNotFoundException exception = new ItemNotFoundException(expectedMessage);
+
+        assertEquals(expectedMessage, exception.getMessage());
+        assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
+    }
+
+    @Test
+    public void testUserNotFoundException() {
+        String expectedMessage = "Item no encontrado";
+        UserNotFoundException exception = new UserNotFoundException(expectedMessage);
 
         assertEquals(expectedMessage, exception.getMessage());
         assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
