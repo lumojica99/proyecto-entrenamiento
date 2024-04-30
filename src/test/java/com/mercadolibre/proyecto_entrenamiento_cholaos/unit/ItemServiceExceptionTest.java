@@ -10,7 +10,7 @@ public class ItemServiceExceptionTest {
 
     @Test
     public void testExceptionMessage() {
-        String expectedMessage = "Test exception message";
+        String expectedMessage = "Mensaje de error";
         ItemServiceException exception = new ItemServiceException(expectedMessage);
 
         assertEquals(expectedMessage, exception.getMessage());

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-25T15:41:59" hostname="CO000F9Y4H6H4P2" time="0.086">
+<testsuite name="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-04-30T20:57:34" hostname="CO000F9Y4H6H4P2" time="0.02">
   <properties/>
-  <testcase name="testInjectionViaReflection()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.086"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="delete_WhenExistingItemIdProvided_DeletesItemAndReturnsVoid()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.006"/>
+  <testcase name="delete_WhenNonexistentItemIdProvided_ReturnsVoid()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.001"/>
+  <testcase name="save_WhenInvalidSiteProvided_ThrowsItemServiceException()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.002"/>
+  <testcase name="getById_WhenIdDoesNotExist_ReturnsEmptyMono()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.002"/>
+  <testcase name="save_WhenValidSiteProvided_SavesItemAndReturnsVoid()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.002"/>
+  <testcase name="getById_WhenIdExists_ReturnsItemDTO()" classname="com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest" time="0.002"/>
+  <system-out><![CDATA[2024-04-30T15:57:34.495-05:00  INFO 51877 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mercadolibre.proyecto_entrenamiento_cholaos.unit.ItemServiceImplTest]: ItemServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-30T15:57:34.541-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Eliminando item con ID: ItemIdValido
+2024-04-30T15:57:34.548-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Eliminando item con ID: ItemIdInexistente
+2024-04-30T15:57:34.550-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Guardando item con ID: ItemIdValido
+2024-04-30T15:57:34.553-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Obteniendo item con ID: idInexistente
+2024-04-30T15:57:34.556-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Guardando item con ID: IteIdValido
+2024-04-30T15:57:34.557-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Creando item con UUID: 945ad4cf-1eab-4453-a3f7-97c157184186
+2024-04-30T15:57:34.559-05:00  INFO 51877 --- [    Test worker] c.m.p.a.s.i.ItemServiceImpl              : Obteniendo item con ID: IdValido
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

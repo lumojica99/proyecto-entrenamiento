@@ -23,7 +23,7 @@ public class ExceptionsTest {
 
     @Test
     public void testItemNotFoundException() {
-        String expectedMessage = "Item not found";
+        String expectedMessage = "Item no encontrado";
         ItemNotFoundException exception = new ItemNotFoundException(expectedMessage);
 
         assertEquals(expectedMessage, exception.getMessage());
