@@ -1,8 +1,11 @@
 package com.mercadolibre.proyecto_entrenamiento_cholaos.unit;
 
+import com.mercadolibre.proyecto_entrenamiento_cholaos.application.exceptions.ItemServiceException;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.application.exceptions.UserServiceException;
 import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.GenericException;
 import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.ItemNotFoundException;
 import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.ItemStatusException;
+import com.mercadolibre.proyecto_entrenamiento_cholaos.domain.exception.UserStatusException;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
@@ -37,5 +40,31 @@ public class ExceptionsTest {
 
         assertEquals(expectedMessage, exception.getMessage());
         assertEquals(HttpStatus.CONFLICT, exception.getStatus());
+    }
+
+    @Test
+    public void testUserStatusException() {
+        String expectedMessage = "User status conflict";
+        UserStatusException exception = new UserStatusException(expectedMessage);
+
+        assertEquals(expectedMessage, exception.getMessage());
+        assertEquals(HttpStatus.CONFLICT, exception.getStatus());
+    }
+    @Test
+    public void testUserExceptionMessage() {
+        String expectedMessage = "Mensaje de error";
+        UserServiceException exception = new UserServiceException(expectedMessage);
+
+        assertEquals(expectedMessage, exception.getMessage());
+        assertEquals(HttpStatus.BAD_REQUEST, exception.getStatus());
+    }
+
+    @Test
+    public void testItemExceptionMessage() {
+        String expectedMessage = "Mensaje de error";
+        ItemServiceException exception = new ItemServiceException(expectedMessage);
+
+        assertEquals(expectedMessage, exception.getMessage());
+        assertEquals(HttpStatus.BAD_REQUEST, exception.getStatus());
     }
 }
