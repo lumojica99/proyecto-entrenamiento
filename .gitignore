@@ -1,8 +1,43 @@
+# System files
 .DS_Store
-*.idea
+
+# IDE and editor folders
+*.idea/
 *.iml
 *.swp
+
+# Build folders
+build/
+out/
+
+# Gradle files
+.gradle/
+*.gradle
+
+# Project specific files
 target/
-.settings
+.settings/
 .classpath
 .project
+
+# Log files
+*.log
+
+# Test artifacts
+test-output/
+build/reports/
+
+# Documentation files
+javadoc/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.rar
+
+# Security files
+*.jks
+*.keystore
